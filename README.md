@@ -7,3 +7,7 @@ Por otro lado, LECOFQ, está encargado del análisis y publicación del informe 
 Primeramente, se debe centralizar la publicación de los talleres junto con las inscripciones a los talleres. Para esto, se utilizará un apartado en la aplicación móvil que presente todos los talleres disponibles para la comunidad y que, además, en ese mismo apartado permita su inscripción.
 Por otro lado, se debe habilitar una sección en la aplicación móvil en la cual se presente de forma clara y para todo público la condición diaria del aire.
 Para finalizar, se implementará un portal de noticias de LECOFQ en la aplicación móvil que permita informar a la comunidad las noticias relacionadas a los talleres que se realizan a diario en la comuna de Quintero, de esta manera dar mayor visibilidad a personas de la comuna sobre las noticias de LECOFQ y sus intereses.
+
+
+
+hola mundo
