@@ -13,9 +13,6 @@ public class Reporte_Clima extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporte_clima);
     }
-    public void onClick(View view){
-        Intent miIntent = new Intent(Reporte_Clima.this, IncripcionDeportiva.class);
-        startActivity(miIntent);
 
-    }
+    
 }
