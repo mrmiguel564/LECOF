@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         cardClimatico = findViewById(R.id.cardClimatico);
         cardNoticias = findViewById(R.id.cardNoticias);
@@ -43,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Climatico");
-                Intent miIntent = new Intent(MainActivity.this, .class);
-                startActivity(miIntent);
             }
         });
 
