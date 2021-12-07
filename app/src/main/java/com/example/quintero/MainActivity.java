@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     CardView cardTalleres;
     CardView cardNoticias;
-    CardView cardClimatico
+    CardView cardClimatico;
 
 
     @Override
