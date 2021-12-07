@@ -1,5 +1,6 @@
 package com.example.quintero;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Climatico");
+                Intent miIntent = new Intent(MainActivity.this, .class);
+                startActivity(miIntent);
             }
         });
 
