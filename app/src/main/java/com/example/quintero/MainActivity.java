@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Climatico");
+                Intent miIntent = new Intent(getApplicationContext(), Reporte_Clima.class);
+                startActivity(miIntent);
             }
         });
 
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Noticias");
+                Intent miIntent2 = new Intent(getApplicationContext(), IncripcionDeportiva.class);
+                startActivity(miIntent2);
             }
         });
 
@@ -56,10 +60,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Talleres");
+                Intent miIntent3 = new Intent(getApplicationContext(), IncripcionDeportiva.class);
+                startActivity(miIntent3);
             }
         });
     }
     private void showToast(String message){
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
+
 }
