@@ -2,4 +2,9 @@
     <string name="app_name">Quintero</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="invalid_mobile">Por favor ingresa un número de telefono valido (recuerda que va un 9 y luego tu número de teléfono celular)</string>
+    <string name="invalid_name">Por favor ingresa tu nombre</string>
+    <string name="invalid_apellido">Por favor ingresa tus dos apellidos</string>
+    <string name="invalid_date">Por favor ingresa una fecha valida (el formato es \"01/01/2001\")</string>
+    <string name="invalid_rut">Por favor ingresa tu rut, si tu rut terminacon una K reemplazala por un 0 (el formato es: tu rut sin puntos, con guión y digito verificador)</string>
 </resources>
