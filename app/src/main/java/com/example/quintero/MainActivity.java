@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Talleres");
-                Intent miIntent3 = new Intent(getApplicationContext(), IncripcionDeportiva.class);
+                Intent miIntent3 = new Intent(getApplicationContext(), TalleresDeportivos.class);
                 startActivity(miIntent3);
             }
         });
