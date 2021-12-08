@@ -19,6 +19,7 @@ public class MuestraTalleres extends AppCompatActivity {
         setContentView(R.layout.activity_mostrar_talleres);
     }
 
+
     public void GetTextFromSQL (View v){
         TextView tx1 = (TextView) findViewById(R.id.textView);
         TextView tx2 = (TextView) findViewById(R.id.textView2);

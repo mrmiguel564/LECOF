@@ -12,12 +12,22 @@ import java.io.*;
 
 
 public class IncripcionDeportiva extends AppCompatActivity {
-    EditText etrut, ettelefono, etnombre, etapellidos, etfecha_nac, etprevision;
+    private EditText etrut, ettelefono, etnombre, etapellidos, etfecha_nac, etprevision;
     Button btbuttonInscribir;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_incripcion_deportiva);
+        etrut       = (EditText)findViewById(R.id.etrut);
+        ettelefono  = (EditText)findViewById(R.id.ettelefono);
+        etapellidos = (EditText)findViewById(R.id.etapellidos);
+        etnombre    = (EditText)findViewById(R.id.etnombre);
+        etfecha_nac = (EditText)findViewById(R.id.etfecha_nac);
+        etprevision = (EditText)findViewById(R.id.etprevision);
     }
+    public void OnClick(View view){
+        Toast.makeText(this, (CharSequence) etrut, Toast.LENGTH_SHORT).show();
+    }
+
     private Boolean validateNombre(){
         String val = etnombre.getEditableText().toString();
         if (val.isEmpty()){
