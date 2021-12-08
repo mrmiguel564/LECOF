@@ -16,6 +16,12 @@
             android:name=".IncripcionDeportiva"
             android:exported="false" />
         <activity
+            android:name=".TalleresDeportivos"
+            android:exported="false" />
+        <activity
+            android:name=".Reporte_Clima"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

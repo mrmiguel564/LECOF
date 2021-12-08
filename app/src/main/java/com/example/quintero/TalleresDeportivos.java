@@ -2,9 +2,8 @@ package com.example.quintero;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
 
 public class TalleresDeportivos extends AppCompatActivity {
 
