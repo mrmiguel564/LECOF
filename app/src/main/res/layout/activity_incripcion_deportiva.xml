@@ -8,38 +8,73 @@
 
     <EditText
         android:id="@+id/rut"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+=======
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+>>>>>>> Formulario
         android:ems="10"
+        android:hint="RUT"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+>>>>>>> Formulario
         app:layout_constraintTop_toBottomOf="@+id/apellidos" />
 
     <EditText
         android:id="@+id/telefono"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+=======
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+>>>>>>> Formulario
         android:ems="10"
+        android:hint="Número de contacto"
         android:inputType="phone"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.691"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+>>>>>>> Formulario
         app:layout_constraintTop_toBottomOf="@+id/rut" />
 
     <EditText
         android:id="@+id/nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="Nombres"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+>>>>>>> Formulario
         app:layout_constraintTop_toBottomOf="@+id/textIncripcion" />
 
     <TextView
@@ -47,8 +82,9 @@
         android:layout_width="137dp"
         android:layout_height="43dp"
         android:layout_marginTop="80dp"
-        android:text="Inscripción"
+        android:text="@string/inscripci_n"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,44 +92,78 @@
 
     <EditText
         android:id="@+id/apellidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="Apellidos"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+>>>>>>> Formulario
         app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
     <EditText
         android:id="@+id/fecha_nac"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+=======
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+>>>>>>> Formulario
         android:ems="10"
+        android:hint="Fecha nacimiento"
         android:inputType="date"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.691"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+>>>>>>> Formulario
         app:layout_constraintTop_toBottomOf="@+id/telefono" />
 
     <EditText
         android:id="@+id/prevision"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+=======
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+>>>>>>> Formulario
         android:ems="10"
+        android:hint="Previsión de salud"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+>>>>>>> Formulario
         app:layout_constraintTop_toBottomOf="@+id/fecha_nac" />
 
-    <Button
-        android:id="@+id/buttonInscribir"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="24dp"
         android:onClick="SolicitarInscripcion"
         android:text="Solicitar Inscripción"
@@ -101,6 +171,17 @@
         app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prevision" />
+=======
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="47dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="370dp" />
+>>>>>>> Formulario
 
     <TextView
         android:id="@+id/tnombre"
