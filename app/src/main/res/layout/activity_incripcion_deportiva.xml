@@ -7,7 +7,7 @@
     tools:context=".IncripcionDeportiva">
 
     <EditText
-        android:id="@+id/rut"
+        android:id="@+id/etrut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -17,10 +17,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+        app:layout_constraintTop_toBottomOf="@+id/etapellidos" />
 
     <EditText
-        android:id="@+id/telefono"
+        android:id="@+id/ettelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rut" />
+        app:layout_constraintTop_toBottomOf="@+id/etrut" />
 
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/etnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -58,20 +58,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/apellidos"
+        android:id="@+id/etapellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Apellidos"
         android:inputType="textPersonName"
-        android:text="Apellidos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/etnombre" />
 
     <EditText
-        android:id="@+id/fecha_nac"
+        android:id="@+id/etfecha_nac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -80,10 +80,10 @@
         android:text="Fecha nacimiento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+        app:layout_constraintTop_toBottomOf="@+id/ettelefono" />
 
     <EditText
-        android:id="@+id/prevision"
+        android:id="@+id/etprevision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -93,18 +93,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fecha_nac" />
+        app:layout_constraintTop_toBottomOf="@+id/etfecha_nac" />
 
     <Button
         android:id="@+id/buttonInscribir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:onClick="SolicitarInscripcion"
+        android:onClick="OnClick"
         android:text="Solicitar Inscripción"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prevision" />
+        app:layout_constraintTop_toBottomOf="@+id/etprevision" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -26,8 +27,6 @@ public class TalleresDeportivos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_talleres_deportivos);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         cardFutbol = findViewById(R.id.cardFutbol);
         cardVolleyball = findViewById(R.id.cardVolleyball);
@@ -40,8 +39,8 @@ public class TalleresDeportivos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Taller 1");
-                Intent miIntent = new Intent(getApplicationContext(), FormularioTalleres.class);
-                startActivity(miIntent);
+                Intent miIntent1 = new Intent(getApplicationContext(), FormularioTalleres.class);
+                startActivity(miIntent1);
             }
         });
 
@@ -49,8 +48,8 @@ public class TalleresDeportivos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Taller 2");
-                Intent miIntent = new Intent(getApplicationContext(), FormularioTalleres.class);
-                startActivity(miIntent);
+                Intent miIntent2 = new Intent(getApplicationContext(), FormularioTalleres.class);
+                startActivity(miIntent2);
             }
         });
 
@@ -58,8 +57,8 @@ public class TalleresDeportivos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Taller 3");
-                Intent miIntent = new Intent(getApplicationContext(), FormularioTalleres.class);
-                startActivity(miIntent);
+                Intent miIntent3 = new Intent(getApplicationContext(), FormularioTalleres.class);
+                startActivity(miIntent3);
             }
         });
 
@@ -67,8 +66,8 @@ public class TalleresDeportivos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Taller 4");
-                Intent miIntent = new Intent(getApplicationContext(), FormularioTalleres.class);
-                startActivity(miIntent);
+                Intent miIntent4 = new Intent(getApplicationContext(), FormularioTalleres.class);
+                startActivity(miIntent4);
             }
         });
 
@@ -76,8 +75,8 @@ public class TalleresDeportivos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Taller 5");
-                Intent miIntent = new Intent(getApplicationContext(), FormularioTalleres.class);
-                startActivity(miIntent);
+                Intent miIntent5 = new Intent(getApplicationContext(), FormularioTalleres.class);
+                startActivity(miIntent5);
             }
         });
 
@@ -85,8 +84,8 @@ public class TalleresDeportivos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Taller 6");
-                Intent miIntent = new Intent(getApplicationContext(), FormularioTalleres.class);
-                startActivity(miIntent);
+                Intent miIntent6 = new Intent(getApplicationContext(), FormularioTalleres.class);
+                startActivity(miIntent6);
             }
         });
     }

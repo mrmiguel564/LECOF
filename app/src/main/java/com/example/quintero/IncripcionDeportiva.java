@@ -26,6 +26,7 @@ public class IncripcionDeportiva extends AppCompatActivity {
     }
     public void OnClick(View view){
         Toast.makeText(this, (CharSequence) etrut, Toast.LENGTH_SHORT).show();
+        
     }
 
     private Boolean validateNombre(){
