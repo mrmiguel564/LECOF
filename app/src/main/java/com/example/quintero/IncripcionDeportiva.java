@@ -4,46 +4,84 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import android.
+import android.widget.Toast;
+import java.text.*;
+import java.util.*;
+import java.io.*;
 
 
 public class IncripcionDeportiva extends AppCompatActivity {
     EditText etrut, ettelefono, etnombre, etapellidos, etfecha_nac, etprevision;
     Button btbuttonInscribir;
-//    AwesomeValidation = awesomeValidation;
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_incripcion_deportiva);
+    }
+    private Boolean validateNombre(){
+        String val = etnombre.getEditableText().toString();
+        if (val.isEmpty()){
+            etnombre.setError("Este campo no puede estar vacio.");
+            return false;
+        } else {
+          etnombre.setError(null);
+          return true;
+        }
+    }
+    private Boolean validateRut(){
+        String val = etrut.getEditableText().toString();
+        if (val.isEmpty()){
+            etrut.setError("Este campo no puede estar vacio.");
+            return false;
+        } else {
+            etrut.setError(null);
+            return true;
+        }
+    }
+    private Boolean validateTelefono(){
+        String val = ettelefono.getEditableText().toString();
+        if (val.isEmpty()){
+            ettelefono.setError("Este campo no puede estar vacio.");
+            return false;
+        } else {
+            ettelefono.setError(null);
+            return true;
+        }
+    }
+    private Boolean validateApellidos(){
+        String val = etapellidos.getEditableText().toString();
+        if (val.isEmpty()){
+            etapellidos.setError("Este campo no puede estar vacio.");
+            return false;
+        } else {
+            etapellidos.setError(null);
+            return true;
+        }
+    }
+    private Boolean validateFecha_nac(){
+        String val = etfecha_nac.getEditableText().toString();
+        if (val.isEmpty()){
+            etfecha_nac.setError("Este campo no puede estar vacio.");
+            return false;
+        } else {
+            etfecha_nac.setError(null);
+            return true;
+        }
+    }
+    public void registrerUser(View view){
 
-        etrut = findViewById(R.id.rut);
-        ettelefono = findViewById(R.id.telefono);
-        etnombre = findViewById(R.id.nombre);
-        etapellidos = findViewById(R.id.apellidos);
-        etfecha_nac = findViewById(R.id.fecha_nac);
-        etprevision = findViewById(R.id.prevision);
-        btbuttonInscribir = findViewById(R.id.buttonInscribir);
+        if (!validateTelefono() | !validateApellidos() | !validateRut() | !validateTelefono() | !validateNombre() | !validateFecha_nac()){
+            return;
+        }
 
-//        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
-//        awesomeValidation.addValidation(this, R.id.nombre,RegexTemplate.NOT_EMPTY, R.string.invalid_name);
-//        awesomeValidation.addValidation(this, R.id.apellidos,RegexTemplate.NOT_EMPTY, R.string.invalid_apellido);
-//        awesomeValidation.addValidation(this, R.id.telefono,"[0-9]{9}", R.string.invalid_mobile);
-//        awesomeValidation.addValidation(this, R.id.fecha_nac, "[0-9]{2}[/]{1}[0-9]{2}[/]{1}[0-9]{4}", R.string.invalid_date);
-//       awesomeValidation.addValidation(this, R.id.rut,"[0-9]{8}[-]{1}[0-9]{1}", R.string.invalid_rut);
+        String rut = etrut.getEditableText().toString();
+        String telefono = ettelefono.getEditableText().toString();
+        String nombre = etnombre.getEditableText().toString();
+        String apellidos = etapellidos.getEditableText().toString();
+        String fecha_nac = etfecha_nac.getEditableText().toString();
+        String prevision = etprevision.getEditableText().toString();
+//        UserHelperClass helperClass = new UserHelperClass(etrut, ettelefono, etnombre, etapellidos, etfecha_nac, etprevision);
+//        reference.child(rut).setValue(helperClass);
 
-//        btbuttonInscribir.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                if (awesomeValidation.validate()){
-//                    Toast.makeText(getApplicationContext(),"El envío del formulario se realizó correctamente.", Toast.LENGTH_SHORT).show();
-//                }else {
-//                    Toast.makeText(getApplicationContext()
-//                            , "Validación del formulario fallida, por favor intentalo nuevamente.",Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
     }
 }
