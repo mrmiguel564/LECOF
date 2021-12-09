@@ -6,16 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class incripcion_exitosa extends AppCompatActivity {
+public class Reporte_Clima extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_incripcion_exitosa);
+        setContentView(R.layout.activity_reporte_clima);
     }
 
-    public void onClick(View view) {
-        Intent miIntent1 = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(miIntent1);
-    }
+    
 }
