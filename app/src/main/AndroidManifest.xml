@@ -9,17 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Quintero">
-        <activity
-            android:name=".FormularioTalleres"
-            android:exported="false" />
+
         <activity
             android:name=".incripcion_exitosa"
-            android:exported="false" />
-        <activity
-            android:name=".IncripcionDeportiva"
-            android:exported="false" />
-        <activity
-            android:name=".FormularioTalleres"
             android:exported="false" />
         <activity
             android:name=".TalleresDeportivos"
@@ -28,7 +20,7 @@
             android:name=".Reporte_Clima"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FormularioTalleres"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

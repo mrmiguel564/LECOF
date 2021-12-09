@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showToast("Clickeo en Noticias");
-                Intent miIntent2 = new Intent(getApplicationContext(), IncripcionDeportiva.class);
-                startActivity(miIntent2);
             }
         });
 
