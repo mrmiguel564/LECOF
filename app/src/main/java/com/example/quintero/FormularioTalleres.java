@@ -46,7 +46,38 @@ public class FormularioTalleres extends AppCompatActivity {
         etdir_num = (EditText)findViewById(R.id.formNumero);
         etdir_loc = (EditText)findViewById(R.id.formLocalidad);
         etdir_pobla = (EditText)findViewById(R.id.formPoblacion);
- //      etprevision = (EditText)findViewById(R.id.formPrevision);
+        etprevision = (EditText)findViewById(R.id.formPrevision);
+        btformulario = (Button) findViewById(R.id.botonFormulario);
+
+        btformulario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String Rut = null;
+                String Nombre = null;
+                String Apellidos = null;
+                String Telefono = null;
+                String Prevision = null;
+                String Calle = null;
+                String Numero = null;
+                String Localidad = null;
+                String Poblacion = null;
+                String Correo = null;
+
+                Rut = etrut.getText().toString();
+                Nombre = etnombre.getText().toString();
+                Apellidos = etapellidos.getText().toString();
+                Telefono = ettelefono.getText().toString();
+                Calle = etdir_calle.getText().toString();
+                Numero = etdir_num.getText().toString();
+                Localidad = etdir_loc.getText().toString();
+                Poblacion = etdir_pobla.getText().toString();
+                Correo = etcorreo.getText().toString();
+                Prevision = etprevision.getText().toString();
+                //vnombre.setText(Nombre);
+                //System.out.println(Nombre);
+            }
+        });
+
     }
 
     public void OnClick(View view){
@@ -217,6 +248,7 @@ public class FormularioTalleres extends AppCompatActivity {
                 Correo = etcorreo.getText().toString();
                 Prevision = etprevision.getText().toString();
                 //vnombre.setText(Nombre);
+                System.out.println(Nombre);
             }
         });
     }
