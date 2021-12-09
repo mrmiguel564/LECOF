@@ -19,7 +19,6 @@
             android:name=".IncripcionDeportiva"
             android:exported="false" />
         <activity
-        <activity
             android:name=".FormularioTalleres"
             android:exported="false" />
         <activity
