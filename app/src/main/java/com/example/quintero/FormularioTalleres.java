@@ -74,7 +74,7 @@ public class FormularioTalleres extends AppCompatActivity {
                 Correo = etcorreo.getText().toString();
                 Prevision = etprevision.getText().toString();
                 //vnombre.setText(Nombre);
-                //System.out.println(Nombre);
+                showToast(Nombre);
             }
         });
 
@@ -204,6 +204,9 @@ public class FormularioTalleres extends AppCompatActivity {
             etdir_pobla.setError(null);
             return true;
         }
+    }
+    private void showToast(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
     public void registrerUser(View view) throws ParseException {
         etrut       = (EditText)findViewById(R.id.formRut);
