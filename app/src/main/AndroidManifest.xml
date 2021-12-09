@@ -17,12 +17,6 @@
             android:name=".incripcion_exitosa"
             android:exported="false" />
         <activity
-            android:name=".IncripcionDeportiva"
-            android:exported="false" />
-        <activity
-            android:name=".FormularioTalleres"
-            android:exported="false" />
-        <activity
             android:name=".TalleresDeportivos"
             android:exported="false" />
         <activity
