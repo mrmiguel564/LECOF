@@ -143,6 +143,11 @@ public class FormularioTalleres extends AppCompatActivity {
                 params.put("apellidos", Apellidos);
                 params.put("numero_contacto", Telefono);
                 params.put("prevision", Prevision);
+                params.put("localidad", Localidad);
+                params.put("numero", Numero);
+                params.put("poblacion_o_villa", Poblacion);
+                params.put("calle", Calle);
+                params.put("correo", Correo);
                 return params;
             }
         };
